@@ -1,0 +1,90 @@
+{
+  "views": {
+    "home": {
+      "message": "OpenSource Software mit ",
+      "introduction": "Hi! Mein Name steht da oben und ich bin Software Entwickler seit 2018. Ich lebe in der Nähe von Hamburg in Deutschland. Hier findest du eine Sammlung meiner privaten Projekte.",
+      "projects": {
+        "kolibri": {
+          "title": "Kolibri Messenger",
+          "description": "Kolibri ist ein kostenloser und komplett privater Android Messenger. Komplett Privat bedeutet er braucht einen Server zum verbinden. Die App verbindet sich mit dem Server und verwendet sonst keine anderen Diesnte. Er ist außerdem komplett verschlüsselt und speichert keine Daten in der Cloud."
+        },
+        "kolibri-server": {
+          "title":"Kolibri Server",
+          "description": "Kolibri Server ist das Backend für die Kolibri Messenger App. Es ist docker basiert und ebenfalls komplett kostenlos."
+        },
+        "godaddy-dyndns": {
+          "title": "GoDaddy DynDNS",
+          "description": "Ein Python basiertes GoDaddy DynDNS Script. Es verwendet ausschließlich die GoDaddy API."
+        },
+        "scrypt": {
+          "title": "SCrypt",
+          "description": "SCrypt ist eine JavaFX Anwendung zum verschlüsseln und entschlüsseln von Dateien mit AES-256."
+        },
+        "scrypt-lite": {
+          "title": "SCrypt lite",
+          "description": "SCrypt lite ist das Terminal Equivalent zu SCrypt. Es verschlüsselt und entschlüsselt Dateien mit AES-256."
+        }
+      }
+    },
+    "imprint": {
+      "title": "Impressum",
+      "title2": "Angaben gemäß § 5 TMG",
+      "address": {
+        "name": "Leon Latsch",
+        "addressLine1":"c/o Werneburg Internet Marketing und Publikations-Service",
+        "addressLine2":"Philipp-Kühner-Straße 2",
+        "addressLine3":"99817 Eisenac"
+      },
+      "contact": {
+        "title": "Kontakt",
+        "phone": {
+          "title": "Telefon:",
+          "value": "+49 (0) 1525 2861408"
+        },
+        "mail": {
+          "title": "E-Mail:",
+          "value": "dev.leonlatsch[at]gmail.com"
+        }
+      },
+      "liability": {
+        "content": {
+          "title": "Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV",
+          "name": "Leon Latsch",
+          "addressLine1": "c/o Werneburg Internet Marketing und Publikations-Service",
+          "addressLine2": "Philipp-Kühner-Straße 2",
+          "addressLine3": "99817 Eisenac"
+        },
+        "line1": "Haftung für Inhalte",
+        "line2": "Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen.",
+        "line3": "Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen nach den allgemeinen Gesetzen bleiben hiervon unberührt. Eine diesbezügliche Haftung ist jedoch erst ab dem Zeitpunkt der Kenntnis einer konkreten Rechtsverletzung möglich. Bei Bekanntwerden von entsprechenden Rechtsverletzungen werden wir diese Inhalte umgehend entfernen.",
+        "line4": "Haftung für Links",
+        "line5": "Unser Angebot enthält Links zu externen Websites Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich. Die verlinkten Seiten wurden zum Zeitpunkt der Verlinkung auf mögliche Rechtsverstöße überprüft. Rechtswidrige Inhalte waren zum Zeitpunkt der Verlinkung nicht erkennbar.",
+        "line6": "Eine permanente inhaltliche Kontrolle der verlinkten Seiten ist jedoch ohne konkrete Anhaltspunkte einer Rechtsverletzung nicht zumutbar. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Links umgehend entfernen."
+      },
+      "copyright": {
+        "line1": "Urheberrecht",
+        "line2": "Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers. Downloads und Kopien dieser Seite sind nur für den privaten, nicht kommerziellen Gebrauch gestattet.",
+        "line3": "Soweit die Inhalte auf dieser Seite nicht vom Betreiber erstellt wurden, werden die Urheberrechte Dritter beachtet. Insbesondere werden Inhalte Dritter als solche gekennzeichnet. Sollten Sie trotzdem auf eine Urheberrechtsverletzung aufmerksam werden, bitten wir um einen entsprechenden Hinweis. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Inhalte umgehend entfernen."
+      },
+      "source": {
+        "title": "Quelle:"
+      }
+    }
+  },
+  "components": {
+    "header": {
+      "title": "Leon Latsch"
+    },
+    "project": {
+      "comming_soon": "COMMING SOON"
+    },
+    "footer": {
+      "imprint" : "Impressum",
+      "copyright": "Copyright © 2020 Leon Latsch"
+    }
+  },
+  "titles": {
+    "home": "Leon Latsch | Home",
+    "imprint": "Leon Latsch | Impressum" 
+  }
+}
