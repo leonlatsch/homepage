@@ -2,8 +2,6 @@
 
 cd dist
 
-echo leonlatsch.dev > CNAME
-
 echo "[*] Pushing gh-pages branch"
 git init
 git add -A

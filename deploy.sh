@@ -1,8 +1,6 @@
 cd dist
 
-echo leonlatsch.dev > CNAME
-
-echo "[*] Done"
+echo "[*] Pushing to gh-pages"
 git init
 git add -A
 git commit -m deploy
