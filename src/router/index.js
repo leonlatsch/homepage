@@ -24,6 +24,17 @@ Vue.use(VueRouter)
       // this generates a separate chunk (imprint.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
       component: () => import(/* webpackChunkName: "imprint" */ '../views/Imprint.vue')
+    },
+    {
+      path: '/photok_privacy_policy',
+      name: 'PhotokPP',
+      meta: {
+        title: 'Photok Privacy Policy'
+      },
+      // route level code-splitting
+      // this generates a separate chunk (imprint.[hash].js) for this route
+      // which is lazy-loaded when the route is visited.
+      component: () => import(/* webpackChunkName: "imprint" */ '../views/PhotokPrivacyPolicy.vue')
     }
 ]
 
