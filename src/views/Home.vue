@@ -29,6 +29,13 @@
 
     <!-- Projects -->
 
+    <Project :title="$t('views.home.projects.photok.title')" :description="$t('views.home.projects.photok.description')"
+    image="photok.png"
+    background="linear-gradient(to right, #319f99, #50C9C3)"
+    textColor="white"
+    github="https://github.com/leonlatsch/photok"
+    commingSoon="true"/>
+
     <Project :title="$t('views.home.projects.kolibri.title')" :description="$t('views.home.projects.kolibri.description')"
     image="kolibri.png"
     background="linear-gradient(to right, #11998e, #38ef7d)"

@@ -4,6 +4,10 @@
       "message": "OpenSource Software with ",
       "introduction": "Hi! My name is up there and I'm a Software Developer since 2018. I live near Hamburg in Germany. Here you can find a summary of my private projects.",
       "projects": {
+        "photok": {
+          "title": "Photok: A safe place for your photos",
+          "description": "Photok is a completly free photo safe. It stores your photos encrypted on your device and secures them with a password."
+        },
         "kolibri": {
           "title": "Kolibri Messenger",
           "description": "Kolibri is a free and completely private Android Messenger. Completely private means it needs a Server to connect to. The App connects to the server and uses no other services. It is also completly encrypted and has does not save your data to the cloud."
@@ -76,7 +80,7 @@
       "title": "Leon Latsch"
     },
     "project": {
-      "comming_soon": "COMMING SOON"
+      "comming_soon": "COMING SOON"
     },
     "footer": {
       "imprint" : "Imprint",
