@@ -34,8 +34,7 @@
     background="linear-gradient(to right, #319f99, #50C9C3)"
     textColor="white"
     github="https://github.com/leonlatsch/photok"
-    gplay="https://play.google.com/store/apps/details?id=dev.leonlatsch.photok"
-    commingSoon="true"/>
+    gplay="https://play.google.com/store/apps/details?id=dev.leonlatsch.photok"/>
 
     <Project :title="$t('views.home.projects.kolibri.title')" :description="$t('views.home.projects.kolibri.description')"
     image="kolibri.png"

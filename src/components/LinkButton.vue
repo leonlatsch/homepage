@@ -69,7 +69,7 @@ export default {
 .gplay {
     vertical-align: middle;
     display: inline-block;
-    height: 4rem;
+    height: 3.7rem;
     width: auto;
 }
 
@@ -84,7 +84,7 @@ export default {
     }
 
     .gplay.responsive {
-        
+        height: 2rem;
     }
 
     #area.responsive {
