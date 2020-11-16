@@ -1,7 +1,8 @@
 <template>
-    <a id="area" class="responsive" :href="url" target="_blank" :style="colorStyle">
-        <font-awsome-icon class="icon responsive" :icon="icon"/>
-        <span class="text responsive">{{ text }}</span>
+    <a id="area" class="responsive" :href="url" target="_blank" :style="boxStyle">
+        <font-awsome-icon v-if="gplay === false" class="icon responsive" :icon="icon"/>
+        <span v-if="gplay === false" class="text responsive">{{ text }}</span>
+        <img v-if="gplay" class="gplay" src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png'/>
     </a>
 </template>
 
@@ -14,7 +15,8 @@ export default {
         url: String,
         color: String,
         borderColor: String,
-        textColor: String
+        textColor: String,
+        gplay: Boolean
     },
     methods: {
         altText: function(title) {
@@ -22,11 +24,19 @@ export default {
         }
     },
     computed: {
-        colorStyle() {
+        boxStyle() {
+            if (this.gplay) {
+                return null
+            }
             return {
                 "background-color": this.color,
                 "color": this.textColor,
-                "border-color": this.borderColor
+                "border-color": this.borderColor,
+                "border-radius": ".5rem",
+                "border-style": "solid",
+                "border-width": "3px",
+                "padding": "5px 10px 2px 10px",
+                "margin": "5px 5px 0px 0px"
             }
         }
     }
@@ -39,13 +49,6 @@ export default {
     cursor: pointer;
     width: auto;
     height: 25px;
-    border-radius: .5rem;
-    padding: 5px 10px 2px 10px;
-    margin: 5px 5px 0px 0px;
-
-    /* Border Color gets sets by colorStyle */
-    border-style: solid;
-    border-width: 3px; 
 }
 
 .icon {
@@ -63,6 +66,13 @@ export default {
     font-weight: 500;
 }
 
+.gplay {
+    vertical-align: middle;
+    display: inline-block;
+    height: 4rem;
+    width: auto;
+}
+
 @media only screen and (max-width: 420px) {
     .text.responsive {
         font-size: 0.9rem;
@@ -71,6 +81,10 @@ export default {
     .icon.responsive {
         width: 15px;
         height: 15px;
+    }
+
+    .gplay.responsive {
+        
     }
 
     #area.responsive {

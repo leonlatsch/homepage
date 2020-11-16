@@ -17,6 +17,7 @@
                 :url="website"
                 :textColor="textColor"
                 :borderColor="textColor"/>
+                <LinkButton v-if="gplay != null" class="links" gplay="true" :url="gplay"/>
             </div>
         </div>
         <div class="imgContainer responsive">
@@ -42,6 +43,7 @@ export default {
         github: String,
         website: String,
         download: String,
+        gplay: String,
         height: String,
         commingSoon: Boolean
     },
