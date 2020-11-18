@@ -23,11 +23,10 @@ export default {
 #languageSwitcher {
     font-weight: bold;
     font-size: .85rem;
-    margin: 10px 0 0 auto;
 }
 
 .active {
-    color: black;
+    color: white;
 }
 
 .inactive {
