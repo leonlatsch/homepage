@@ -1,6 +1,5 @@
 <template>
   <div class="home">
-    <h2 class="message responsive">{{ $t('views.home.message') }}<img class="heart" alt="Pixel Heart" src="../assets/heart.png"/></h2>
     <div class="description responsive">
       <p>{{ $t('views.home.introduction') }}</p>
     </div>
@@ -9,23 +8,23 @@
 
     <LinkButton :icon="['fab', 'twitter']" text="Twitter" 
     url="https://twitter.com/leonlatsch" 
-    color="deepskyblue" textColor="white" borderColor="#1d9fef"/>
+    color="deepskyblue"/>
 
     <LinkButton :icon="['fab', 'reddit-alien']" text="Reddit"
     url="https://www.reddit.com/u/leonlatsch"
-    color="#ff4500" textColor="white" borderColor="#da5000"/>
+    color="#ff4500"/>
 
     <LinkButton :icon="['fab', 'twitch']" text="Twitch"
     url="https://twitch.tv/leonlatsch"
-    color="#9147ff" textColor="white" borderColor="#7639d1"/>
+    color="#9147ff" />
 
     <LinkButton :icon="['fab', 'youtube']" text="YouTube"
     url="https://www.youtube.com/channel/UCuHlotm527Csanl_EoevnqQ"
-    color="#FF0000" textColor="white" borderColor="#b91c1c"/>
+    color="#FF0000" />
     
     <LinkButton :icon="['fab', 'github']" text="GitHub"
     url="https://github.com/leonlatsch"
-    color="#3c4146" textColor="white" borderColor="#181a1b"/>
+    color="#3c4146" />
 
     <!-- Projects -->
 
@@ -34,7 +33,7 @@
     background="linear-gradient(to right, #319f99, #50C9C3)"
     textColor="white"
     github="https://github.com/leonlatsch/photok"
-    commingSoon="true"/>
+    comingSoon="true"/>
 
     <Project :title="$t('views.home.projects.kolibri.title')" :description="$t('views.home.projects.kolibri.description')"
     image="kolibri.png"
@@ -76,8 +75,8 @@
 </template>
 
 <script>
-import LinkButton from '../components/LinkButton.vue'
-import Project from '../components/Project.vue'
+import LinkButton from '../components/LinkButton'
+import Project from '../components/Project'
 
 export default {
   name: 'Home',
@@ -90,6 +89,7 @@ export default {
 
 <style scoped>
 .description { /* Margin for description text */
+display: flex;
     margin-bottom: 30px;
     font-size: 1rem;
 }
@@ -98,9 +98,7 @@ export default {
     width: 20px;
 }
 
-.message {
-  font-size: 1.5rem;;
-}
+
 
 /* Responsive for smaller than 420px. */
 @media only screen and (max-width: 420px) {

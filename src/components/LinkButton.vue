@@ -1,8 +1,7 @@
 <template>
     <a id="area" class="responsive" :href="url" target="_blank" :style="boxStyle">
-        <font-awsome-icon v-if="gplay === false" class="icon responsive" :icon="icon"/>
-        <span v-if="gplay === false" class="text responsive">{{ text }}</span>
-        <img v-if="gplay" class="gplay" src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png'/>
+        <font-awsome-icon class="icon responsive" :icon="icon"/>
+        <span class="text responsive">{{ text }}</span>
     </a>
 </template>
 
@@ -13,10 +12,7 @@ export default {
         icon: Array,
         text: String,
         url: String,
-        color: String,
-        borderColor: String,
-        textColor: String,
-        gplay: Boolean
+        color: String
     },
     methods: {
         altText: function(title) {
@@ -29,14 +25,7 @@ export default {
                 return null
             }
             return {
-                "background-color": this.color,
-                "color": this.textColor,
-                "border-color": this.borderColor,
-                "border-radius": ".5rem",
-                "border-style": "solid",
-                "border-width": "3px",
-                "padding": "5px 10px 2px 10px",
-                "margin": "5px 5px 0px 0px"
+                "background-color": this.color
             }
         }
     }
@@ -49,6 +38,11 @@ export default {
     cursor: pointer;
     width: auto;
     height: 25px;
+    color: white;
+
+    padding: 5px 10px 2px 10px;
+    margin: 5px 5px 0 0;
+    border-radius: 5px;
 }
 
 .icon {
@@ -66,13 +60,6 @@ export default {
     font-weight: 500;
 }
 
-.gplay {
-    vertical-align: middle;
-    display: inline-block;
-    height: 3.7rem;
-    width: auto;
-}
-
 @media only screen and (max-width: 420px) {
     .text.responsive {
         font-size: 0.9rem;
@@ -81,10 +68,6 @@ export default {
     .icon.responsive {
         width: 15px;
         height: 15px;
-    }
-
-    .gplay.responsive {
-        height: 2rem;
     }
 
     #area.responsive {

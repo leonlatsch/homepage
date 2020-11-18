@@ -3,21 +3,18 @@
         <div class="textdiv responsive">
             <h1 class="heading responsive">{{ title }}</h1>
             <p class="text responsive">{{ description }}</p>
-            <span v-if="commingSoon" class="commingSoon">{{ $t('components.project.comming_soon') }}</span>
+            <span v-if="comingSoon" class="comingSoon">{{ $t('components.project.comming_soon') }}</span>
             <div class="buttons responsive">
+                <LinkButton v-if="gplay != null" class="links" :icon="['fab', 'google-play']" text="Google Play"
+                :url="gplay" />
+                <LinkButton v-if="fdroid != null" class="links" :icon="['fab', 'android']" text="F-Droid"
+                :url="fdroid" />
                 <LinkButton v-if="download != null" class="links" :icon="['fas', 'cloud-download-alt']" text="Download"
-                :url="download"
-                :textColor="textColor"
-                :borderColor="textColor"/>
+                :url="download"/>
                 <LinkButton v-if="github != null" class="links" :icon="['fab', 'github']" text="GitHub"
-                :url="github"
-                :textColor="textColor"
-                :borderColor="textColor"/>
+                :url="github"/>
                 <LinkButton v-if="website != null" class="links" :icon="['fas', 'globe-americas']" text="Website"
-                :url="website"
-                :textColor="textColor"
-                :borderColor="textColor"/>
-                <LinkButton v-if="gplay != null" class="links" gplay="true" :url="gplay"/>
+                :url="website"/>
             </div>
         </div>
         <div class="imgContainer responsive">
@@ -27,7 +24,7 @@
 </template>
 
 <script>
-import LinkButton from './LinkButton.vue'
+import LinkButton from './LinkButton'
 
 export default {
     name: 'Project',
@@ -39,26 +36,19 @@ export default {
         description: String,
         image: String,
         background: String,
-        textColor: String,
         github: String,
         website: String,
         download: String,
         gplay: String,
-        height: String,
-        commingSoon: Boolean
+        fdroid: String,
+        comingSoon: Boolean
     },
     computed: {
         boxStyle() {
-            let style = {
+            return {
                 background: this.background,
                 color: this.textColor
             }
-
-            if (this.height) {
-                style.height = this.height
-            }
-
-            return style;
         }
     },
     methods: {
@@ -67,7 +57,7 @@ export default {
             return images('./' + img);
         },
         altText: function() {
-            return this.title + " project image";
+            return this.title;
         }
     }
 }
@@ -91,8 +81,8 @@ export default {
     filter: drop-shadow(0 0 20px rgba(0,0,0,.2));
 }
 
-.commingSoon {
-    font-weight: bold;
+.comingSoon {
+    font-weight: 300;
     font-style: italic;
     filter: drop-shadow(0 0 12px rgba(0,0,0,.2))
 }
@@ -155,5 +145,6 @@ export default {
 
 .links {
     margin: 5px 0px 5px 0px;
+    vertical-align: middle;
 }
 </style>

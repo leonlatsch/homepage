@@ -1,10 +1,11 @@
 <template>
     <diV id="header">
-    <router-link to="/" tag="div" id="link">
-        <img class="logo" alt="Rose Logo" src="../assets/rose.png"/>
-        <h1 class="heading responsive">{{ $t('components.header.title') }}</h1>
-    </router-link>
-    <LanguageSwitcher/>
+        <router-link to="/" tag="div" class="link">
+            <img class="logo" alt="Rose Logo" src="../assets/rose.png"/>
+            <h1 class="responsive">{{ $t('components.header.title') }}</h1>
+            <h3 class="message responsive">{{ $t('views.home.message') }}</h3>
+        </router-link>
+        <LanguageSwitcher class="langSwitcher"/>
     </diV>
 </template>
 
@@ -21,32 +22,27 @@ export default {
 
 <style scoped>
 #header {
-    display: flex;
+    text-align: center;
+    margin-bottom: 10px;
 }
 
-#link { /* Sort content horizontaly */
+.link { /* Sort content horizontaly */
     cursor: pointer;
-    display: flex;
 }
 
 .logo { /* Logo circle */
     align-self: center;
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    background-color: #1d9fef;
+    width: 100px;
+    height: 100px;
+    margin-top: 10px;
 }
 
-/* responsive for smalle rthan 420px- */
-@media only screen and (max-width: 420px) {
-    .heading.responsive {
-        font-size: 2rem;
-    }
+.message {
+  font-size: 1.5rem;;
+  text-align: center;
 }
 
-.heading { /* Font settings for heading */
-    margin: 10px;
-    font-size: 3rem;
-    font-weight: 100;
+.langSwitcher {
+    text-align: end;
 }
 </style>
