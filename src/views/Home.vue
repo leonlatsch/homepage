@@ -33,7 +33,7 @@
     background="linear-gradient(to right, #319f99, #50C9C3)"
     textColor="white"
     github="https://github.com/leonlatsch/photok"
-    commingSoon="true"/>
+    comingSoon="true"/>
 
     <Project :title="$t('views.home.projects.kolibri.title')" :description="$t('views.home.projects.kolibri.description')"
     image="kolibri.png"
