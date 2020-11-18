@@ -31,6 +31,7 @@ export default {
 
   background-color: #1a1a1a;
   color: white;
+  margin: 0 10px;
 }
 
 .content {
