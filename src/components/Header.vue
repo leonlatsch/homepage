@@ -3,8 +3,9 @@
         <router-link to="/" tag="div" class="link">
             <img class="logo" alt="Rose Logo" src="../assets/rose.png"/>
             <h1 class="responsive">{{ $t('components.header.title') }}</h1>
+            <h3 class="message responsive">{{ $t('views.home.message') }}</h3>
         </router-link>
-        <LanguageSwitcher/>
+        <LanguageSwitcher class="langSwitcher"/>
     </diV>
 </template>
 
@@ -22,6 +23,7 @@ export default {
 <style scoped>
 #header {
     text-align: center;
+    margin-bottom: 10px;
 }
 
 .link { /* Sort content horizontaly */
@@ -33,5 +35,14 @@ export default {
     width: 100px;
     height: 100px;
     margin-top: 10px;
+}
+
+.message {
+  font-size: 1.5rem;;
+  text-align: center;
+}
+
+.langSwitcher {
+    text-align: end;
 }
 </style>

@@ -1,6 +1,5 @@
 <template>
   <div class="home">
-    <h2 class="message responsive">{{ $t('views.home.message') }}<img class="heart" alt="Pixel Heart" src="../assets/heart.png"/></h2>
     <div class="description responsive">
       <p>{{ $t('views.home.introduction') }}</p>
     </div>
@@ -76,8 +75,8 @@
 </template>
 
 <script>
-import LinkButton from '../components/LinkButton.vue'
-import Project from '../components/Project.vue'
+import LinkButton from '../components/LinkButton'
+import Project from '../components/Project'
 
 export default {
   name: 'Home',
@@ -90,6 +89,7 @@ export default {
 
 <style scoped>
 .description { /* Margin for description text */
+display: flex;
     margin-bottom: 30px;
     font-size: 1rem;
 }
@@ -98,9 +98,7 @@ export default {
     width: 20px;
 }
 
-.message {
-  font-size: 1.5rem;;
-}
+
 
 /* Responsive for smaller than 420px. */
 @media only screen and (max-width: 420px) {

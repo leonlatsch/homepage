@@ -1,7 +1,7 @@
 {
   "views": {
     "home": {
-      "message": "OpenSource Software with ",
+      "message": "OpenSource Software with Passion",
       "introduction": "Hi! My name is up there and I'm a Software Developer since 2018. I live near Hamburg in Germany. Here you can find a summary of my private projects.",
       "projects": {
         "photok": {

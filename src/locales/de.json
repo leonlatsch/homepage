@@ -1,7 +1,7 @@
 {
   "views": {
     "home": {
-      "message": "OpenSource Software mit ",
+      "message": "OpenSource Software mit Leidenschaft",
       "introduction": "Hi! Mein Name steht da oben und ich bin Software Entwickler seit 2018. Ich lebe in der Nähe von Hamburg in Deutschland. Hier findest du eine Sammlung meiner privaten Projekte.",
       "projects": {
         "photok": {

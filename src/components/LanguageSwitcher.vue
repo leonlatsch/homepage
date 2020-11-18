@@ -1,7 +1,7 @@
 <template>
     <div id="languageSwitcher" class="responsive">
         <a href="?lang=de" :class="{active: $i18n.locale == 'de', inactive: $i18n.locale == 'en'}">DE</a>
-         | 
+        <span class="pipe">|</span>
         <a href="?lang=en" :class="{active: $i18n.locale == 'en', inactive: $i18n.locale == 'de'}">EN</a>
     </div>
 </template>
@@ -31,6 +31,10 @@ export default {
 
 .inactive {
     color: darkgrey;
+}
+
+.pipe {
+    margin: 0 2px;
 }
 
 /* Responsive for smaller than 420px */
