@@ -8,23 +8,23 @@
 
     <LinkButton :icon="['fab', 'twitter']" text="Twitter" 
     url="https://twitter.com/leonlatsch" 
-    color="deepskyblue" textColor="white" borderColor="#1d9fef"/>
+    color="deepskyblue"/>
 
     <LinkButton :icon="['fab', 'reddit-alien']" text="Reddit"
     url="https://www.reddit.com/u/leonlatsch"
-    color="#ff4500" textColor="white" borderColor="#da5000"/>
+    color="#ff4500"/>
 
     <LinkButton :icon="['fab', 'twitch']" text="Twitch"
     url="https://twitch.tv/leonlatsch"
-    color="#9147ff" textColor="white" borderColor="#7639d1"/>
+    color="#9147ff" />
 
     <LinkButton :icon="['fab', 'youtube']" text="YouTube"
     url="https://www.youtube.com/channel/UCuHlotm527Csanl_EoevnqQ"
-    color="#FF0000" textColor="white" borderColor="#b91c1c"/>
+    color="#FF0000" />
     
     <LinkButton :icon="['fab', 'github']" text="GitHub"
     url="https://github.com/leonlatsch"
-    color="#3c4146" textColor="white" borderColor="#181a1b"/>
+    color="#3c4146" />
 
     <!-- Projects -->
 
