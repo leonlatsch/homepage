@@ -1,9 +1,11 @@
 <template>
     <div id="footer">
         <span>
+            <span>{{ $t('components.footer.copyright') }}</span>
+            &bull;
             <span @click="scrollToTop()"><router-link class="a" to="/imprint">{{$t('components.footer.imprint') }}</router-link></span>
             &bull;
-            <span>{{ $t('components.footer.copyright') }}</span>
+            <span @click="scrollToTop()"><router-link class="a" to="/privacy_policy">{{$t('components.footer.privacy_policy') }}</router-link></span>
         </span>
     </div>
 </template>

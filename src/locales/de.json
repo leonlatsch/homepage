@@ -84,11 +84,13 @@
     },
     "footer": {
       "imprint" : "Impressum",
+      "privacy_policy": "Datenschutzerklärung",
       "copyright": "Copyright © 2020 Leon Latsch"
     }
   },
   "titles": {
     "home": "Leon Latsch | Home",
-    "imprint": "Leon Latsch | Impressum" 
+    "imprint": "Leon Latsch | Impressum",
+    "privacy_policy": "Leon Latsch | Datenschutzerklärung"
   }
 }

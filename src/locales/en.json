@@ -84,11 +84,13 @@
     },
     "footer": {
       "imprint" : "Imprint",
+      "privacy_policy": "Privacy Policy",
       "copyright": "Copyright © 2020 Leon Latsch"
     }
   },
   "titles": {
     "home": "Leon Latsch | Home",
-    "imprint": "Leon Latsch | Imprint" 
+    "imprint": "Leon Latsch | Imprint" ,
+    "privacy_policy": "Leon Latsch | Privacy Policy"
   }
 }
