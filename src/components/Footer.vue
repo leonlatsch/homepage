@@ -4,17 +4,9 @@
             <div class="copyright">
                 {{ $t('components.footer.copyright') }}
             </div>
-            <span @click="scrollToTop()">
-                <router-link class="link" to="/imprint">
-                {{$t('components.footer.imprint') }}
-                </router-link>
-            </span>
+            <span @click="scrollToTop()"><router-link class="link" to="/imprint">{{ $t('components.footer.imprint') }}</router-link></span>
             &bull;
-            <span @click="scrollToTop()">
-                <router-link class="link" to="/privacy_policy">
-                {{$t('components.footer.privacy_policy') }}
-                </router-link>
-            </span>
+            <span @click="scrollToTop()"><router-link class="link" to="/privacy_policy">{{ $t('components.footer.privacy_policy') }}</router-link></span>
         </span>
     </div>
 </template>
