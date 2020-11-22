@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>Privacy Policy</h1>
+    <h1>Privacy Policy for Photok</h1>
     <p>
       Leon Latsch built the Photok app as an Open Source app. This SERVICE is
       provided by Leon Latsch at no cost and is intended for use as is.
