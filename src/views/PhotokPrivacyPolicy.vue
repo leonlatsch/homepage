@@ -1,5 +1,7 @@
 <template>
   <div>
+    <BackToHome />
+
     <h1>Privacy Policy for Photok</h1>
     <p>
       Leon Latsch built the Photok app as an Open Source app. This SERVICE is
@@ -147,7 +149,12 @@
 </template>
 
 <script>
+import BackToHome from '../components/BackToHome'
+
 export default {
   name: "PhotokPrivacyPolicy",
+  components: {
+    BackToHome
+  }
 };
 </script>

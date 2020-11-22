@@ -1,5 +1,7 @@
 <template>
   <div>
+    <BackToHome />
+
     <h1>Privacy Policy for Leon Latsch</h1>
 
     <p>
@@ -209,8 +211,13 @@
 </template>
 
 <script>
+import BackToHome from '../components/BackToHome'
+
 export default {
-    name: "PrivacyPolicy"
+    name: "PrivacyPolicy",
+    components: {
+      BackToHome
+    }
 };
 </script>
 

@@ -1,5 +1,7 @@
 <template>
     <div id="imprint">
+        <BackToHome />
+
         <h1>{{ $t('views.imprint.title') }}</h1>
 
         <h2>{{ $t('views.imprint.title2') }}</h2>
@@ -33,8 +35,13 @@
 </template>
 
 <script>
+import BackToHome from '../components/BackToHome'
+
 export default {
-    name: 'Imprint'
+    name: 'Imprint',
+    components: {
+        BackToHome
+    }
 }
 </script>
 
