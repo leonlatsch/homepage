@@ -55,17 +55,9 @@ const router = new VueRouter({
   routes
 })
 
-const validLangs = ['en', 'de']
-
 router.beforeEach((to, from, next) => {
   // Set Title
   document.title = i18n.t(to.meta?.title)
-
-  // Set language
-  let language = new URLSearchParams(window.location.search).get('lang')
-  if (language && validLangs.includes(language)) {
-    i18n.locale = language;
-  }
 
   next()
 })

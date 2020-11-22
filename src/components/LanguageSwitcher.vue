@@ -1,20 +1,28 @@
 <template>
     <div id="languageSwitcher" class="responsive">
-        <a href="?lang=de" :class="{active: $i18n.locale == 'de', inactive: $i18n.locale == 'en'}">DE</a>
+        <span @click="setDe()" class="localeButton" :class="{active: $i18n.locale == 'de', inactive: $i18n.locale == 'en'}">DE</span>
         <span class="pipe">|</span>
-        <a href="?lang=en" :class="{active: $i18n.locale == 'en', inactive: $i18n.locale == 'de'}">EN</a>
+        <span @click="setEn()" class="localeButton" :class="{active: $i18n.locale == 'en', inactive: $i18n.locale == 'de'}">EN</span>
     </div>
 </template>
 
 <script>
+import i18n from '../i18n'
+
 export default {
     name: 'LanguageSwitcher',
-    computed: {
-        inactive() {
-            return {
-                "color": "darkgrey"
-            }
+    methods: {
+        setEn() {
+            console.log("en")
+            i18n.locale = "en"
+        },
+        setDe() {
+            console.log("de")
+            i18n.locale = "de"
         }
+    },
+    computed: {
+        
     }
 }
 </script>
@@ -35,6 +43,10 @@ export default {
 
 .pipe {
     margin: 0 2px;
+}
+
+.localeButton {
+    cursor: pointer;
 }
 
 /* Responsive for smaller than 420px */

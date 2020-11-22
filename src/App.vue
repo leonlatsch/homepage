@@ -11,12 +11,21 @@
 <script>
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
+import i18n from '@/i18n'
 
 export default {
   name: "app",
   components: {
     Header,
     Footer
+  },
+  mounted() {
+    let lang = navigator.language
+    if (lang === "de") {
+      i18n.locale = "de"
+    } else {
+      i18n.locale = "en"
+    }
   }
 }
 </script>
