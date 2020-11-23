@@ -21,9 +21,6 @@ export default {
     },
     computed: {
         boxStyle() {
-            if (this.gplay) {
-                return null
-            }
             return {
                 "background-color": this.color
             }
