@@ -2,7 +2,7 @@
   "views": {
     "home": {
       "message": "OpenSource Software mit Leidenschaft",
-      "introduction": "Hi! Mein Name steht da obenund ich bin Software Entwickler aus Deutschland. Hier findest du eine Sammlung meiner privaten Projekte.",
+      "introduction": "Hi! Mein Name steht da oben und ich bin Software Entwickler aus Deutschland. Hier findest du eine Sammlung meiner privaten Projekte.",
       "projects": {
         "photok": {
           "title": "Photok: Ein sicherer Ort für deine Fotos",
