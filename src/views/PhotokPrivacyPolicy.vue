@@ -128,7 +128,7 @@
     <p><strong>Contact Us</strong></p>
     <p>
       If you have any questions or suggestions about my Privacy Policy, do not
-      hesitate to contact me at abuse[at]leonlatsch.dev.
+      hesitate to contact me at dev.leonlatsch@gmail.com.
     </p>
     <p>
       This privacy policy page was created at
