@@ -1,7 +1,7 @@
 <template>
-    <div id="projectContainer" class="responsive" :style="boxStyle">
+    <div class="projectContainer responsive" :style="boxStyle">
         <div class="textdiv responsive">
-            <h1 class="heading responsive">{{ title }}</h1>
+            <h3 class="heading responsive">{{ title }}</h3>
             <p class="text responsive">{{ description }}</p>
             <span v-if="comingSoon" class="comingSoon">{{ $t('components.project.comming_soon') }}</span>
             <div class="buttons responsive">
@@ -18,7 +18,7 @@
             </div>
         </div>
         <div class="imgContainer responsive">
-            <img class="img responsive" :src="getImgUrl(image)" :alt="altText()"/>
+            <img class="img responsive" :src="getImgUrl(image)" :srcset="getImgUrl(smallImage) + ' 480w, ' + getImgUrl(image) +' 1080w'" :alt="altText()"/>
         </div>
     </div>    
 </template>
@@ -35,6 +35,7 @@ export default {
         title: String,
         description: String,
         image: String,
+        smallImage: String,
         background: String,
         github: String,
         website: String,
@@ -64,7 +65,7 @@ export default {
 </script>
 
 <style scoped>
-#projectContainer {
+.projectContainer {
     margin-top: 20px;
     border-radius: 1rem;
     overflow: hidden;
@@ -87,6 +88,15 @@ export default {
     filter: drop-shadow(0 0 12px rgba(0,0,0,.2))
 }
 
+h3 {
+    font-size: 2em;
+    font-weight: bold;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
 /* Responsive for smaller than 825px */
 @media only screen and (max-width: 825px) {
     .imgContainer.responsive {
@@ -97,7 +107,7 @@ export default {
     .textdiv.responsive {
         margin: auto;
     }
-    #projectContainer.responsive {
+    .projectContainer.responsive {
         text-align: center;
         max-height: 550px;
     }
@@ -125,7 +135,7 @@ export default {
         width: 250px;
     }
 
-    #projectContainer.responsive {
+    .projectContainer.responsive {
         max-height: 450px;
     }
 }
