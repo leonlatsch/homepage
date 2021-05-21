@@ -81,7 +81,7 @@ export default {
         margin: 0;
         font-size: 1rem;
         text-decoration: underline;
-        
+        padding: 10px;
     }
 }
 </style>
