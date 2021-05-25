@@ -1,5 +1,5 @@
 <template>
-    <a id="area" class="responsive" :href="url" target="_blank" :style="boxStyle">
+    <a class="responsive area" rel="noopener" :href="url" target="_blank" :style="boxStyle">
         <font-awsome-icon class="icon responsive" :icon="icon"/>
         <span class="text responsive">{{ text }}</span>
     </a>
@@ -30,7 +30,7 @@ export default {
 </script>
 
 <style scoped>
-#area {
+.area {
     display: inline-block;
     cursor: pointer;
     width: auto;
@@ -67,9 +67,21 @@ export default {
         height: 15px;
     }
 
-    #area.responsive {
-        height: 20px;
+    .area.responsive {
+        height: 40px;
         padding: 2px 8px 2px 8px;
+        margin: 7px;
+    }
+
+    .area.responsive svg{
+        display: none;
+    }
+
+    .area.responsive span{
+        margin: 0;
+        font-size: 1rem;
+        text-decoration: underline;
+        padding: 10px;
     }
 }
 </style>

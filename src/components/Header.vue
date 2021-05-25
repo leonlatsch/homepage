@@ -1,12 +1,12 @@
 <template>
-    <diV id="header">
+    <div id="header">
         <router-link to="/" tag="div" class="link">
             <img class="logo" alt="Rose Logo" src="../assets/rose.png"/>
             <h1 class="responsive">{{ $t('components.header.title') }}</h1>
         </router-link>
-        <h3 class="message responsive">{{ $t('views.home.message') }}</h3>
+        <h2 class="message responsive">{{ $t('views.home.message') }}</h2>
         <LanguageSwitcher class="langSwitcher"/>
-    </diV>
+    </div>
 </template>
 
 <script>
