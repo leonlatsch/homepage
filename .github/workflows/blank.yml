@@ -1,0 +1,14 @@
+name: Deplooy master to Live
+
+on: workflow_dispatch
+
+jobs:
+  deploy:
+  
+    runs-on: ubuntu-latest
+    
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Deploy
+        run: sh deploy.sh
