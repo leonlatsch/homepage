@@ -27,4 +27,4 @@ jobs:
           git commit -m "deploy"
       
       - name: Deploy
-        run: git push -f git@github.com:leonlatsch/homepage.git master:test
+        run: git push -f https://leonlatsch:${{ secrets.GITHUB_TOKEN }}@github.com/leonlatsch/homepage.git master:test
