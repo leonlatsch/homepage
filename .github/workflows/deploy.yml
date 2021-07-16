@@ -16,7 +16,7 @@ jobs:
       - name: Build
         run: npm run build
 
-      - name: Pre Deploy
+      - name: Deploy
         run: |
           cd dist
           cp index.html 404.html
@@ -25,6 +25,5 @@ jobs:
           git init
           git add -A
           git commit -m "deploy"
-      
-      - name: Deploy
-        run: git push -f https://leonlatsch:${{ secrets.GITHUB_TOKEN }}@github.com/leonlatsch/homepage.git master:test
+          git push -f https://leonlatsch:${{ secrets.GITHUB_TOKEN }}@github.com/leonlatsch/homepage.git master:test
+          
