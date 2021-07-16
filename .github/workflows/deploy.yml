@@ -27,8 +27,4 @@ jobs:
           git commit -m "deploy"
       
       - name: Deploy
-        uses: ad-m/github-push-action@master
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: test
-          force: true
+        run: git push -f git@github.com:leonlatsch/homepage.git master:test
