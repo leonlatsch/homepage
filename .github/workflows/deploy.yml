@@ -20,8 +20,8 @@ jobs:
         run: |
           cd dist
           cp index.html 404.html
-          git config user.name "Leon Latsch"
-          git config user.email "dev.leonlatsch@gmail.com"
+          git config --global user.name "Leon Latsch"
+          git config --global user.email "dev.leonlatsch@gmail.com"
           git init
           git add -A
           git commit -m "deploy"
