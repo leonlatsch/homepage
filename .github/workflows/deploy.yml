@@ -16,5 +16,11 @@ jobs:
       - name: Build
         run: npm run build
 
-      - name: Deploy
+      - name: Pre Deploy
         run: sh ci/create_repo_in_dist.sh
+      
+      - name: Deploy
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: test
