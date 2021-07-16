@@ -1,4 +1,4 @@
-name: Deplooy master to Live
+name: Deploy master to Live
 
 on: workflow_dispatch
 
@@ -17,10 +17,18 @@ jobs:
         run: npm run build
 
       - name: Pre Deploy
-        run: sh ci/create_repo_in_dist.sh
+        run: |
+          cd dist
+          cp index.html 404.html
+          git config user.name "Leon Latsch"
+          git config user.email "dev.leonlatsch@gmail.com"
+          git init
+          git add -A
+          git commit -m "deploy"
       
       - name: Deploy
         uses: ad-m/github-push-action@master
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           branch: test
+          force: true
