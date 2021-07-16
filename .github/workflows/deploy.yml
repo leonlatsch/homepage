@@ -17,4 +17,4 @@ jobs:
         run: npm run build
 
       - name: Deploy
-        run: sh deploy.sh
+        run: sh ci/create_repo_in_dist.sh
