@@ -24,6 +24,6 @@ jobs:
           git config --global user.email "dev.leonlatsch@gmail.com"
           git init
           git add -A
-          git commit -m "deploy"
+          git commit -m "deploy `date`"
           git push -f https://leonlatsch:${{ secrets.GITHUB_TOKEN }}@github.com/leonlatsch/homepage.git master:gh-pages
           
