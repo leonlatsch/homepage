@@ -60,20 +60,6 @@
       utilizing my Service, the time and date of your use of the Service, and
       other statistics.
     </p>
-    <p><strong>Cookies</strong></p>
-    <p>
-      Cookies are files with a small amount of data that are commonly used as
-      anonymous unique identifiers. These are sent to your browser from the
-      websites that you visit and are stored on your device's internal memory.
-    </p>
-    <p>
-      This Service does not use these “cookies” explicitly. However, the app may
-      use third party code and libraries that use “cookies” to collect
-      information and improve their services. You have the option to either
-      accept or refuse these cookies and know when a cookie is being sent to
-      your device. If you choose to refuse our cookies, you may not be able to
-      use some portions of this Service.
-    </p>
     <p><strong>Service Providers</strong></p>
     <p>
       I may employ third-party companies and individuals due to the following
@@ -85,12 +71,6 @@
       <li>To perform Service-related services; or</li>
       <li>To assist us in analyzing how our Service is used.</li>
     </ul>
-    <p>
-      I want to inform users of this Service that these third parties have
-      access to your Personal Information. The reason is to perform the tasks
-      assigned to them on our behalf. However, they are obligated not to
-      disclose or use the information for any other purpose.
-    </p>
     <p><strong>Security</strong></p>
     <p>
       I value your trust in providing us your Personal Information, thus we are
@@ -124,7 +104,7 @@
       to review this page periodically for any changes. I will notify you of any
       changes by posting the new Privacy Policy on this page.
     </p>
-    <p>This policy is effective as of 2020-11-05</p>
+    <p>This policy is effective as of 2022-01-09</p>
     <p><strong>Contact Us</strong></p>
     <p>
       If you have any questions or suggestions about my Privacy Policy, do not
