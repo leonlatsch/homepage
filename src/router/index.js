@@ -29,7 +29,7 @@ Vue.use(VueRouter)
       path: '/photok_privacy_policy',
       name: 'PhotokPP',
       meta: {
-        title: 'Photok Privacy Policy'
+        title: 'titles.privacy_policy_photok'
       },
       // route level code-splitting
       // this generates a separate chunk (imprint.[hash].js) for this route

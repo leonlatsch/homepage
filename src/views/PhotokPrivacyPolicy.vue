@@ -149,12 +149,12 @@
 </template>
 
 <script>
-import BackToHome from '../components/BackToHome'
+import BackToHome from "../components/BackToHome";
 
 export default {
   name: "PhotokPrivacyPolicy",
   components: {
-    BackToHome
-  }
+    BackToHome,
+  },
 };
 </script>
