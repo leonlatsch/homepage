@@ -13,7 +13,7 @@
           "description": "Kolibri is a free and completely private Android Messenger. Completely private means it needs a Server to connect to. The App connects to the server and uses no other services. It is also completly encrypted and has does not save your data to the cloud."
         },
         "kolibri-server": {
-          "title":"Kolibri Server",
+          "title": "Kolibri Server",
           "description": "Kolibri Server is the backend for the Kolibri Messenger App. It's docker based and also completely free."
         },
         "godaddy-dyndns": {
@@ -35,9 +35,9 @@
       "title2": "Information provided according to Sec. 5 German Telemedia Act (TMG)",
       "address": {
         "name": "Leon Latsch",
-        "addressLine1":"c/o Werneburg Internet Marketing und Publikations-Service",
-        "addressLine2":"Philipp-Kühner-Straße 2",
-        "addressLine3":"99817 Eisenach"
+        "addressLine1": "c/o Werneburg Internet Marketing und Publikations-Service",
+        "addressLine2": "Philipp-Kühner-Straße 2",
+        "addressLine3": "99817 Eisenach"
       },
       "contact": {
         "title": "Contact",
@@ -85,12 +85,12 @@
     "footer": {
       "imprint": "Imprint",
       "privacy_policy": "Privacy Policy",
-      "copyright": "Copyright © 2022 Leon Latsch"
+      "copyright": "Copyright © 2022-2023 Leon Latsch"
     }
   },
   "titles": {
     "home": "Leon Latsch | Home",
-    "imprint": "Leon Latsch | Imprint" ,
+    "imprint": "Leon Latsch | Imprint",
     "privacy_policy": "Leon Latsch | Privacy Policy",
     "privacy_policy_photok": "Leon Latsch | Privacy Policy for Photok"
   }
