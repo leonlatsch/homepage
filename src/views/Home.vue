@@ -28,6 +28,13 @@
 
     <!-- Projects -->
 
+    <Project :title="$t('views.home.projects.esp32.title')" :description="$t('views.home.projects.esp32.description')"
+    image="esp32.png"
+    smallImage="esp32.png"
+    background="linear-gradient(to right, #000000, #434343)"
+    textColor="white"
+    github="https://github.com/leonlatsch/HT611-01_ESP32"/>
+
     <Project :title="$t('views.home.projects.photok.title')" :description="$t('views.home.projects.photok.description')"
     image="photok.png"
     smallImage="photok-small.png"

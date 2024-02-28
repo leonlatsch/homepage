@@ -4,6 +4,10 @@
       "message": "OpenSource Software mit Leidenschaft",
       "introduction": "Hi! Mein Name steht da oben und ich bin Software Entwickler aus Deutschland. Hier findest du eine Sammlung meiner privaten Projekte.",
       "projects": {
+        "esp32": {
+          "title": "ESP32 Gegensprechanlage Erweiterung",
+          "description": "Eine ESP32-basierte Platine zur Steuerung einer Siedle HT611-01 Gegensprechanlage. Sie ermöglicht Funktionen wie Fernöffnung der Tür, Türklingelbenachrichtigung und Stummschaltung. Das Projekt umfasst Montageanleitungen, Firmware-Flashing-Anleitung und Installationsdetails."
+        },
         "photok": {
           "title": "Photok: Ein sicherer Ort für deine Fotos",
           "description": "Photok ist ein komplett freier Foto-Safe. Er speichert deine Fotos verschlüsselt auf deinem Gerät und sichert sie mit einem Passwort."
