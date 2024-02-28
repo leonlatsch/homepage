@@ -28,6 +28,13 @@
 
     <!-- Projects -->
 
+    <Project title="ESP32 Intercom Exension" description="ESP32 based pcb to control a HT601-01 intercom via WiFi and smart home."
+    image="photok.png"
+    smallImage="photok-small.png"
+    background="linear-gradient(to right, #000000, #434343)"
+    textColor="white"
+    github="https://github.com/leonlatsch/HT611-01_ESP32"/>
+
     <Project :title="$t('views.home.projects.photok.title')" :description="$t('views.home.projects.photok.description')"
     image="photok.png"
     smallImage="photok-small.png"
