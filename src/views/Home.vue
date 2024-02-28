@@ -29,7 +29,7 @@
     <!-- Projects -->
 
     <Project title="ESP32 Intercom Exension" description="ESP32 based pcb to control a HT601-01 intercom via WiFi and smart home."
-    image="photok.png"
+    image="esp32.png"
     smallImage="photok-small.png"
     background="linear-gradient(to right, #000000, #434343)"
     textColor="white"
