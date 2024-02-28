@@ -1,7 +1,7 @@
 {
   "views": {
     "home": {
-      "message": "OpenSource Software with Passion",
+      "message": "OpenSource Software and Hardware with Passion",
       "introduction": "Hi! My name is up there and I'm a Software Developer from Germany. Here you can find a summary of my private projects.",
       "projects": {
         "esp32": {
