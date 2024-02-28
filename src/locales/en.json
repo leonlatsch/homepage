@@ -4,6 +4,10 @@
       "message": "OpenSource Software with Passion",
       "introduction": "Hi! My name is up there and I'm a Software Developer from Germany. Here you can find a summary of my private projects.",
       "projects": {
+        "esp32": {
+          "title": "ESP32 Intercom Exension",
+          "description": "A ESP32 based PCB designed to control a Siedle HT611-01 intercom system. It allows features like remote door opening, doorbell notification, and muting. The project includes assembly instructions, firmware flashing guide, and installation details."
+        },
         "photok": {
           "title": "Photok: A safe place for your photos",
           "description": "Photok is a completly free photo safe. It stores your photos encrypted on your device and secures them with a password."
