@@ -13,7 +13,7 @@ Vue.component('font-awsome-icon', FontAwesomeIcon)
 Vue.config.productionTip = false
 
 new Vue({
-  router,
-  i18n,
-  render: h => h(App)
+    router,
+    i18n,
+    render: h => h(App)
 }).$mount('#app')

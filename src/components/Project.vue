@@ -6,21 +6,21 @@
             <span v-if="comingSoon" class="comingSoon">{{ $t('components.project.comming_soon') }}</span>
             <div class="buttons responsive">
                 <LinkButton v-if="gplay != null" class="links" :icon="['fab', 'google-play']" text="Google Play"
-                :url="gplay" />
+                    :url="gplay" />
                 <LinkButton v-if="fdroid != null" class="links" :icon="['fab', 'android']" text="F-Droid"
-                :url="fdroid" />
+                    :url="fdroid" />
                 <LinkButton v-if="download != null" class="links" :icon="['fas', 'cloud-download-alt']" text="Download"
-                :url="download"/>
-                <LinkButton v-if="github != null" class="links" :icon="['fab', 'github']" text="GitHub"
-                :url="github"/>
+                    :url="download" />
+                <LinkButton v-if="github != null" class="links" :icon="['fab', 'github']" text="GitHub" :url="github" />
                 <LinkButton v-if="website != null" class="links" :icon="['fas', 'globe-americas']" text="Website"
-                :url="website"/>
+                    :url="website" />
             </div>
         </div>
         <div class="imgContainer responsive">
-            <img class="img responsive" :src="getImgUrl(image)" :srcset="getImgUrl(smallImage) + ' 480w, ' + getImgUrl(image) +' 1080w'" :alt="altText()"/>
+            <img class="img responsive" :src="getImgUrl(image)"
+                :srcset="getImgUrl(smallImage) + ' 480w, ' + getImgUrl(image) + ' 1080w'" :alt="altText()" />
         </div>
-    </div>    
+    </div>
 </template>
 
 <script>
@@ -53,11 +53,11 @@ export default {
         }
     },
     methods: {
-        getImgUrl: function(img) {
+        getImgUrl: function (img) {
             var images = require.context('../assets/projects/', false);
             return images('./' + img);
         },
-        altText: function() {
+        altText: function () {
             return this.title;
         }
     }
@@ -72,20 +72,20 @@ export default {
     position: relative;
     display: block;
     min-height: 160px;
-    filter: drop-shadow(0 0 10px rgba(0,0,0,.2));
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, .2));
 }
 
 .img {
     width: 300px;
     object-fit: cover;
     object-position: 100% 0;
-    filter: drop-shadow(0 0 20px rgba(0,0,0,.2));
+    filter: drop-shadow(0 0 20px rgba(0, 0, 0, .2));
 }
 
 .comingSoon {
     font-weight: 300;
     font-style: italic;
-    filter: drop-shadow(0 0 12px rgba(0,0,0,.2))
+    filter: drop-shadow(0 0 12px rgba(0, 0, 0, .2))
 }
 
 h3 {
@@ -104,9 +104,11 @@ h3 {
         position: relative;
         margin: 30px;
     }
+
     .textdiv.responsive {
         margin: auto;
     }
+
     .projectContainer.responsive {
         text-align: center;
         max-height: 550px;
@@ -116,7 +118,7 @@ h3 {
 /* Responsive for smaller than 420px */
 @media only screen and (max-width: 420px) {
     .heading.responsive {
-        font-size: 1.8rem;   
+        font-size: 1.8rem;
     }
 
     .text.responsive {

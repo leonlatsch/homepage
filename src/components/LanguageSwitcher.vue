@@ -1,8 +1,10 @@
 <template>
     <div id="languageSwitcher" class="responsive">
-        <span @click="setDe()" class="localeButton" :class="{active: $i18n.locale == 'de', inactive: $i18n.locale == 'en'}">DE</span>
+        <span @click="setDe()" class="localeButton"
+            :class="{ active: $i18n.locale == 'de', inactive: $i18n.locale == 'en' }">DE</span>
         <span class="pipe">|</span>
-        <span @click="setEn()" class="localeButton" :class="{active: $i18n.locale == 'en', inactive: $i18n.locale == 'de'}">EN</span>
+        <span @click="setEn()" class="localeButton"
+            :class="{ active: $i18n.locale == 'en', inactive: $i18n.locale == 'de' }">EN</span>
     </div>
 </template>
 
@@ -22,7 +24,7 @@ export default {
         }
     },
     computed: {
-        
+
     }
 }
 </script>

@@ -1,8 +1,8 @@
 <template>
-  <router-link to="/" id="backToHome">
-    <font-awsome-icon :icon="['fas', 'arrow-left']" />
-    <span class="linkText">Back to Home</span>
-  </router-link>
+    <router-link to="/" id="backToHome">
+        <font-awsome-icon :icon="['fas', 'arrow-left']" />
+        <span class="linkText">Back to Home</span>
+    </router-link>
 </template>
 
 <script>

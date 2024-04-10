@@ -1,6 +1,6 @@
 <template>
     <a class="responsive area" rel="noopener" :href="url" target="_blank" :style="boxStyle">
-        <font-awsome-icon class="icon responsive" :icon="icon"/>
+        <font-awsome-icon class="icon responsive" :icon="icon" />
         <span class="text responsive">{{ text }}</span>
     </a>
 </template>
@@ -15,7 +15,7 @@ export default {
         color: String
     },
     methods: {
-        altText: function(title) {
+        altText: function (title) {
             return title + " Icon";
         }
     },
@@ -73,11 +73,11 @@ export default {
         margin: 7px;
     }
 
-    .area.responsive svg{
+    .area.responsive svg {
         display: none;
     }
 
-    .area.responsive span{
+    .area.responsive span {
         margin: 0;
         font-size: 1rem;
         text-decoration: underline;
