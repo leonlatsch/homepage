@@ -5,7 +5,7 @@
       "introduction": "Hi! My name is up there and I'm a Software Developer from Germany. Here you can find a summary of my private projects.",
       "projects": {
         "esp32": {
-          "title": "ESP32 Intercom Exension",
+          "title": "ESP32 Intercom Extension",
           "description": "A ESP32 based PCB designed to control a Siedle HT611-01 intercom system. It allows features like remote door opening, doorbell notification, and muting. The project includes assembly instructions, firmware flashing guide, and installation details."
         },
         "photok": {
