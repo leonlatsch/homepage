@@ -6,8 +6,6 @@
 
         <!-- Social Media -->
 
-        <LinkButton :icon="['fab', 'twitter']" text="Twitter" url="https://twitter.com/leonlatsch" color="#007faa" />
-
         <LinkButton :icon="['fab', 'reddit-alien']" text="Reddit" url="https://www.reddit.com/u/leonlatsch"
             color="#db3b00" />
 
